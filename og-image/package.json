@@ -1,0 +1,25 @@
+{
+  "name": "profile-me-og",
+  "private": true,
+  "type": "module",
+  "description": "Dynamic Open Graph card for jayjayzzzzzz.me — rendered on demand from live data.",
+  "scripts": {
+    "test:render": "tsx scripts/render-local.ts",
+    "test:render:fixture": "tsx scripts/render-local.ts --fixture",
+    "typecheck": "tsc --noEmit"
+  },
+  "allowScripts": {
+    "esbuild": true
+  },
+  "dependencies": {
+    "workers-og": "^0.0.27"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/node": "^26.5.0",
+    "@vercel/og": "^1.0.2",
+    "satori": "^0.33.4",
+    "tsx": "^4.23.13",
+    "typescript": "5.7"
+  }
+}

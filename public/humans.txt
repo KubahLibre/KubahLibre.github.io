@@ -1,0 +1,31 @@
+/* TEAM */
+
+  Developer / Designer: Sven Messing (KubahLibre)
+  Contact: sven.messing.dev [at] gmail [dot] com
+  GitHub: github.com/KubahLibre
+  From: Wiesbaden, Germany
+
+/* THANKS */
+
+  osumatrix.me — the look this page is a homage to
+  Lanyard (Phineas) — live Discord presence
+  Open-Meteo — keyless weather
+  Cloudflare Workers — the API proxy + guestbook
+
+/* SITE */
+
+  Last update: 2026/09/08
+  Language: English
+  Doctype: HTML5
+  IDE: VS Code
+  Framework: Astro (no UI framework)
+  Hosting: GitHub Pages + Cloudflare Workers
+  Standards: HTML5, CSS3, ES modules
+  Components: WebGL cursor trail, service-worker offline fallback
+
+              ___
+        _  _ / __|
+       | || \__ \   built by hand,
+        \__/|___/   poked at often
+
+  psst — ⌘K / Ctrl+K opens a command palette; the console key opens a shell

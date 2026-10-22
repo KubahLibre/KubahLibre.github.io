@@ -1,0 +1,39 @@
+---
+import { ageFrom, LOCATION } from "../config";
+import { links, icons } from "../data/social-links";
+
+// Rendered server-side; refreshed client-side by src/scripts/age.ts.
+const age = ageFrom(new Date());
+---
+
+<div id="rotating-card">
+  <div id="card">
+    <h1>KubahLibre</h1>
+    <p>
+      It is <b id="clock">--:--</b><span id="weather" hidden></span> for me in {LOCATION.label}.<br />
+      <span id="age">{age}</span>&nbsp;years old.
+    </p>
+    <ul>
+      {
+        links.map((link) => {
+          const external = /^https?:|^mailto:/.test(link.href);
+          return (
+            <li class="link">
+              <a
+                href={link.href}
+                aria-label={link.name}
+                rel={external ? "noopener noreferrer" : undefined}
+                target={external ? "_blank" : undefined}
+                data-action={link.action}
+              >
+                <svg viewBox={icons[link.icon].vb} xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path fill="currentColor" d={icons[link.icon].d} />
+                </svg>
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+</div>
