@@ -111,4 +111,3 @@ One-time setup:
 2. **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
 `site` in [astro.config.mjs](astro.config.mjs) is set to that URL; `base`
-
